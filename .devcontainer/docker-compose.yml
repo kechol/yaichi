@@ -6,6 +6,7 @@ services:
       target: workspace
     environment:
       SHELL: /bin/zsh
+      YAICHI_EXCLUDED_LISTENING_PORTS: 12345
     command: |
       sh -c 'while sleep 3600; do :; done'
     volumes:
